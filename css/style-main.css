@@ -3,12 +3,30 @@
 .contain-map{
 	height: 200px;
 	width: 200px;
-}
-
-.contain-map img{
-	height: auto;
-	width: auto;
+	position: relative;
 }
 
 /* = region
 **********************************************************************/
+
+
+/* = damap
+**********************************************************************/
+.damap{
+	position: relative;
+}
+
+/* = balloon
+**********************************************************************/
+.balloon{
+	position: absolute;
+}
+
+.balloon:hover{
+	/*transform: */
+}
+
+#b-building-main{
+	top: 897px;
+	left:951px;
+}
