@@ -23,7 +23,17 @@ body{
 
 .posthead{
 	bottom: 0;
-	height: 10px;
+	height: 18px;
+}
+
+.posthead p{
+	margin: 0;
+	font-family: 'Arimo',sans-serif;
+	color: white;
+	font-size: 12px;
+	padding-top: 3px;
+	text-align: center;
+	letter-spacing: 1px;
 }
 /* = header
 **********************************************************************/
@@ -58,11 +68,6 @@ header img{
 	width: 22px;
 	float: left;
 	margin-left: 72px;
-}
-
-
-.cont:hover{
-	background-color: red;
 }
 
 /* = contain-map
