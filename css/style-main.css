@@ -1,6 +1,5 @@
 /* = imports
 **********************************************************************/
-@import url('https://fonts.googleapis.com/css?family=Quicksand:700');
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 
 /* = body
@@ -32,19 +31,40 @@ header{
 	margin-top: 5px;
 	background-color: #0078D7;
 	height: 30px;
-	text-align: center;
 	width: 25%;
 	margin-left: 37.5%;
 	font-family: 'Arimo', sans-serif;
 	color: white;
 	z-index: 4;
+
+	border-radius: 0 0 5px 5px;
 }
 
 header p{
 	padding-top: 5px;
-	letter-spacing: 1px;
-	margin: 0;
+	letter-spacing: 3px;
+	margin:0;
 }
+
+.break{
+	font-size: 16px;
+	margin-left: 67px;
+	margin-right: 62px;
+
+}
+header img{
+	margin-top: 3px;
+	height: 22px;
+	width: 22px;
+	float: left;
+	margin-left: 72px;
+}
+
+
+.cont:hover{
+	background-color: red;
+}
+
 /* = contain-map
 **********************************************************************/
 .contain-map{
