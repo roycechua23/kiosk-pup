@@ -16,17 +16,63 @@
 	position: relative;
 }
 
+/* = transition
+**********************************************************************/
+
+.balloon{
+	-ms-transition: transform .12s ease-in-out;
+ 	-webkit-transition: transform .12s ease-in-out;
+/*	-ms-transition:color .12s ease-out, background .23s ease-in, border .12s ease-in-out, transform .12s ease-in-out;
+ 	-webkit-transition:color .12s ease-out, background .23s ease-in, border .12s ease-in-out,  transform .12s ease-in-out;
+*/
+}
+
 /* = balloon
 **********************************************************************/
 .balloon{
 	position: absolute;
+	cursor: pointer;
 }
 
 .balloon:hover{
-	/*transform: */
+	-webkit-animation: wiggle 0.5s infinite;
+	-moz-animation: wiggle 0.5s infinite;
+	animation: wiggle 0.5s infinite;
 }
 
 #b-building-main{
 	top: 897px;
 	left:951px;
 }
+
+
+/* = GOT IT FROM THE W E B
+article : HARRY BAILEY,https://harrybailey.com/2011/09/css3-element-wiggle-with-keyframes/;
+**********************************************************************/
+
+/* safari and chrome */
+@-webkit-keyframes wiggle {
+	0% {-webkit-transform:rotate(4deg);}
+	50% {-webkit-transform:rotate(-4deg);}
+	100% {-webkit-transform:rotate(4deg);}
+}
+ 
+/* firefox */
+@-moz-keyframes wiggle {
+	0% {-moz-transform:rotate(4deg);}
+	50% {-moz-transform:rotate(-4deg);}
+	100% {-moz-transform:rotate(4deg);}
+}
+ 
+/* anyone brave enough to implement the ideal method */
+@keyframes wiggle {
+	0% {transform:rotate(4deg);}
+	50% {transform:rotate(-4deg);}
+	100% {transform:rotate(4deg);}
+}
+ /*
+.wiggler:hover {
+	-webkit-animation: wiggle 0.5s infinite;
+	-moz-animation: wiggle 0.5s infinite;
+	animation: wiggle 0.5s infinite;
+}*/
