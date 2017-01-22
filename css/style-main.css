@@ -32,6 +32,8 @@
 .balloon{
 	position: absolute;
 	cursor: pointer;
+	z-index: 2;
+
 }
 
 .balloon:hover{
@@ -41,13 +43,56 @@
 }
 
 #b-building-main{
-	top: 897px;
-	left:951px;
+	top: 899px;
+	left: 951px;
 }
+
+#b-park{
+	top: 666px;
+	left: 1349px;
+}
+
+#b-chapel{
+	top: 1137px;
+	left: 1257px;
+}
+
+#b-obelisk{
+	top: 510px;
+	left: 1396px;
+}
+
+#b-gymnasium{
+	top: 101px;
+	left: 1796px;
+}
+
+#b-shrine{
+	top: 688px;
+	left: 1513px;
+}
+
+#b-library{
+	top: 186px;
+	left: 962px;
+}
+
+#b-oval{
+	top: 990px;
+	left: 1839px;
+	background-color: red;
+}
+
+#b-station-ferry{
+	top: 1332px;
+	left: 653px;
+}
+
 
 
 /* = GOT IT FROM THE W E B
 article : HARRY BAILEY,https://harrybailey.com/2011/09/css3-element-wiggle-with-keyframes/;
+please credit
 **********************************************************************/
 
 /* safari and chrome */
