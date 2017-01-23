@@ -1,3 +1,0 @@
-function aler(){
-	alert('wow');
-}

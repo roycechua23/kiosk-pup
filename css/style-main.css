@@ -35,6 +35,72 @@ body{
 	text-align: center;
 	letter-spacing: 1px;
 }
+
+/* = modal
+**********************************************************************/
+.m{
+	z-index:3;
+	position: fixed;
+	height: 40%;
+	width: 50%;
+	margin-top: 200px;
+	background-color: white;
+	margin-left: 25%;
+	overflow: auto;
+	padding: 3px;
+	
+	border-radius: 7px;
+}
+
+.m-contain-img{
+	float:left;
+	/*background-color: blue;*/
+}
+
+.m-content{
+	/*background-color: green;*/
+	font-size: 19px;
+}
+
+.m-content p{
+	margin: 0;
+}
+
+.m-title{
+	/*background-color: red;*/
+	font-size: 22px;
+
+}
+.m-title h2{
+	margin: 0;
+}
+.m-title, .m-content{
+	font-family: 'Arimo',sans-serif;
+}
+.m-contain-img img{
+	height: auto;
+	width: 100px;
+	padding
+}
+
+.m-wrap{
+	padding: 5px;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 19px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /* = header
 **********************************************************************/
 header{
@@ -70,6 +136,14 @@ header img{
 	margin-left: 72px;
 }
 
+.info-icon{
+	cursor: pointer;
+}
+
+.info-icon:hover{
+	transform: scale(1.07);
+}
+
 /* = contain-map
 **********************************************************************/
 .contain-map{
@@ -95,6 +169,11 @@ header img{
 /*	-ms-transition:color .12s ease-out, background .23s ease-in, border .12s ease-in-out, transform .12s ease-in-out;
  	-webkit-transition:color .12s ease-out, background .23s ease-in, border .12s ease-in-out,  transform .12s ease-in-out;
 */
+}
+
+header{
+	-ms-transition: transform .12s ease-in-out;
+ 	-webkit-transition: transform .12s ease-in-out;
 }
 
 /* = balloon
@@ -158,7 +237,31 @@ header img{
 	left: 653px;
 }
 
+#b-tahanan-alumni{
+	top: 71px;
+	left: 1303px;
+}
 
+#b-river{
+	top: 714px;
+	left: 164px;
+}
+#b-office-visitor{
+	top: 428px;
+	left: 2040px;
+}
+#b-pylon{
+	top: 477px;
+	left: 2172px;
+}
+#b-lagoon{
+	top: 509px;
+	left: 1023px;
+}
+#b-building-charlie{
+	top:464px;
+	left: 553px;
+}
 
 /* = GOT IT FROM THE W E B
 article : HARRY BAILEY,https://harrybailey.com/2011/09/css3-element-wiggle-with-keyframes/;
@@ -185,9 +288,77 @@ please credit
 	50% {transform:rotate(-4deg);}
 	100% {transform:rotate(4deg);}
 }
- /*
-.wiggler:hover {
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/*.wiggler:hover {
 	-webkit-animation: wiggle 0.5s infinite;
 	-moz-animation: wiggle 0.5s infinite;
 	animation: wiggle 0.5s infinite;
 }*/
+
+
+
+
+/* = SCROLLBAR CUSTOMIZATION
+STACKOVERFLOW LINK: http://stackoverflow.com/questions/7713599/styling-an-inner-scrollbar-like-the-twitter-conversation-interface/7713784#7713784;
+**********************************************************************/
+
+body ::-webkit-scrollbar{
+	width:9px;
+	height:9px;
+}
+body ::-webkit-scrollbar-button:start:decrement,body ::-webkit-scrollbar-button:end:increment{
+	display:block;
+	height:0;
+	background-color:
+	transparent;
+}
+body ::-webkit-scrollbar-track-piece{
+	background-color:#FAFAFA;
+	-webkit-border-radius:0;
+	-webkit-border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+}
+body ::-webkit-scrollbar-thumb:vertical{
+	height:50px;background-color:#999;
+	-webkit-border-radius:8px;
+}
+body ::-webkit-scrollbar-thumb:horizontal{
+	width:50px;
+	background-color:#999;
+	-webkit-border-radius:8px;
+}
+
+body ::-webkit-scrollbar{
+	width:9px;
+	height:9px;
+}
+body ::-webkit-scrollbar-button:start:decrement,body ::-webkit-scrollbar-button:end:increment{
+	display:block;
+	height:0;
+	background-color:
+	transparent;
+}
+body ::-webkit-scrollbar-track-piece{
+	background-color:#FAFAFA;
+	-webkit-border-radius:0;
+	-webkit-border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+}
+body ::-webkit-scrollbar-thumb:vertical{
+	height:50px;background-color:#999;
+	-webkit-border-radius:8px;
+}
+body ::-webkit-scrollbar-thumb:horizontal{
+	width:50px;
+	background-color:#999;
+	-webkit-border-radius:8px;
+}
