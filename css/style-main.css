@@ -44,11 +44,10 @@ body{
 	height: 40%;
 	width: 50%;
 	margin-top: 200px;
-	background-color: white;
+	background-color: #1784DA;
 	margin-left: 25%;
 	overflow: auto;
-	padding: 3px;
-	
+	display: none;
 	border-radius: 7px;
 }
 
@@ -60,37 +59,47 @@ body{
 .m-content{
 	/*background-color: green;*/
 	font-size: 19px;
+	/*background-color: #0078D7;*/
 }
 
 .m-content p{
 	margin: 0;
+	padding-top: 4px;
+	text-indent: 2px;
+	letter-spacing: 0px;
+	line-height: 1.34em;
 }
 
 .m-title{
 	/*background-color: red;*/
+	background-color: #0078D7;
 	font-size: 22px;
 
 }
 .m-title h2{
 	margin: 0;
+	padding-top: 11px;
+	padding-left: 15px;
+	padding-bottom: 15px;
 }
 .m-title, .m-content{
 	font-family: 'Arimo',sans-serif;
+	color: white;
 }
 .m-contain-img img{
 	height: auto;
-	width: 100px;
-	padding
+	width: 300px;
+	padding: 20px;
 }
 
 .m-wrap{
-	padding: 5px;
+	/*padding: 5px;*/
 }
 
 .close {
     color: white;
     float: right;
-    font-size: 19px;
+    font-size: 32px;
     font-weight: bold;
 }
 .close:hover,
@@ -149,10 +158,6 @@ header img{
 .contain-map{
 	position: relative;
 }
-
-/* = region
-**********************************************************************/
-
 
 /* = damap
 **********************************************************************/
@@ -309,6 +314,7 @@ please credit
 
 /* = SCROLLBAR CUSTOMIZATION
 STACKOVERFLOW LINK: http://stackoverflow.com/questions/7713599/styling-an-inner-scrollbar-like-the-twitter-conversation-interface/7713784#7713784;
+FOR CHROME ONLY. DEAR IE Y DO U SUCK. jk
 **********************************************************************/
 
 body ::-webkit-scrollbar{

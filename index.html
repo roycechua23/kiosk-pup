@@ -3,10 +3,11 @@
 <head>
 	<title>Map of the PUP Main Campus</title>
 	<meta charset="utf-8">
-	<script type="text/javascript" language="javascript" src="js/script.js"></script>
-	<!-- REMEMBER TO CREDIT THE OWNERRRRRR -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+		<!-- REMEMBER TO CREDIT THE OWNERRRRRR -->
 	<!--LINK: https://github.com/asvd/dragscroll  -->
 	<script src="dragscroll/dragscroll.js"></script>
+	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style-main.css">
 	<link rel="icon" href="website-icon.ico" type="image/png">
@@ -17,14 +18,13 @@
 </div>
 <header>
 	<div class="cont">
-		<img src="images/info-icon.png" alt="Information Icon" class="info-icon">
+		<img src="images/info-icon.png" alt="Information Icon" class="info-icon" onclick="revealModal();">
 	</div>
 	<p><span class="break">|</span>kiosk</p>
 </header>
-<div class="m">
-	<div class="m-wrap">
+<div class="m" id="modal">
 		<div class="m-title">
-			<h2>Region Name Here <span class="close">&times</span></h2>
+			<h2>Region Name Here <span class="close" onclick="closeModal();">&times</span></h2>
 		</div>
 		<div class="m-contain-img">
 			<img src="images/PUPLogo.png" alt="Picture of the location">
@@ -32,7 +32,6 @@
 		<div class="m-content">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolore quos nesciunt quod id repellendus, architecto dignissimos asperiores aut. Vitae quisquam, itaque corrupti. Modi inventore quas molestiae quasi dolor, magnam corporis saepe veritatis nemo enim illo alias nobis nisi fuga dolore iste, sit facere dolorum! Non tempore asperiores nobis atque dignissimos. Ea quae sit, unde fugiat eos distinctio, a esse quasi doloribus officia ipsam similique. Error odio, aspernatur excepturi exercitationem, accusantium eum optio soluta facere! Neque ducimus reprehenderit iste, dignissimos eligendi itaque, velit magnam! Temporibus iste libero architecto illo, repudiandae dolorum. Cupiditate commodi sed iste facere quaerat, ut, assumenda fugiat.</p>
 		</div>
-	</div>
 </div>
 
 <div class="posthead">
@@ -59,14 +58,14 @@
 </div>
 
 <map name="pupmap">
-	<area shape="circle" coords="1412,554,48" href="obelisk.html" alt="Obelisk" id="obelisk" class="region">
-	<area shape="circle" coords="1275,1207,134" href="chapel.html" alt="Interfaith Chapel" id="chapel" class="region">
+	<area shape="circle" coords="1412,554,48" alt="Obelisk" id="obelisk" class="region">
+	<area shape="circle" coords="1275,1207,134" alt="Interfaith Chapel" id="chapel" class="region">
 	<area shape="poly" 
 		coords="2021,534,
 				2029,465,
 				2093,473,
-				2089,537," 
-		href="office-visitor.html" alt="Visitor's Office" id="office-visitor" class="region">
+				2089,537" 
+		alt="Visitor's Office" id="office-visitor" class="region">
 	<area shape="poly" 
 		coords="1549,1116,
 				1532,1270,
@@ -80,19 +79,19 @@
 				1911,689,
 				1628,1005,
 				1807,752" 
-		href="oval.html" alt="Track and Football Oval" id="oval" class="region">
+		alt="Track and Football Oval" id="oval" class="region">
 	<area shape="poly" 
 		coords="1537,666,
 				1446,815,
 				1515,855,
 				1618,714" 
-		href="shrine.html" alt="Apolinario Mabini Shrine" id="shrine" class="region">
+		alt="Apolinario Mabini Shrine" id="shrine" class="region">
 	<area shape="poly" 
 		coords="1672,66,
 				1657,253,
 				1954,277,
 				1970,94" 
-		href="gym.html" alt="Gymnasium and Sports Center" id="gym" class="region">
+		alt="Gymnasium and Sports Center" id="gym" class="region">
 	<area shape="poly" 
 		coords="778,66,
 				886,28,
@@ -102,7 +101,7 @@
 				984,318,
 				1053,508,
 				946,547" 
-		href="library.html" alt="Ninoy Aquino Library and Learning Resources Center" id="library" class="region">
+		alt="Ninoy Aquino Library and Learning Resources Center" id="library" class="region">
 	<area shape="poly" 
 		coords="669,768,
 				944,926,
@@ -122,13 +121,13 @@
 				789,1100,
 				864,1059,
 				590,908" 
-		href="building-main.html" alt="Main Building" id="buidling-main" class="region">
+		alt="Main Building" id="buidling-main" class="region">
 	<area shape="poly" 
 		coords="641,1372,
 				684,1359
 				708,1424,
 				666,1440,"
-		href="station-ferry.html" alt="PUP Ferry Station" id="station-ferry" class="region">
+		alt="PUP Ferry Station" id="station-ferry" class="region">
 	<area shape="poly" 
 		coords="1259,757,
 				1347,903
@@ -136,26 +135,26 @@
 				1473,664
 				1421,672,
 				1357,661"
-		href="park.html" alt="Freedom Park" id="park" class="region">
+		alt="Freedom Park" id="park" class="region">
 	<area shape="poly" 
 		coords="1334,209,
 				1341,100,
 				1307,98,
 				1291,203"
-		href="tahanan-alumni.html" alt="Tahanan ng Alumni" id="tahanan-alumni" class="region">
+		alt="Tahanan ng Alumni" id="tahanan-alumni" class="region">
 	<area shape="poly" 
 		coords="103,5,
 				6,5,
 				6,1452,
 				653,1451,
 				239,219"
-		href="river.html" alt="Pasig River" id="river" class="region">
+		alt="Pasig River" id="river" class="region">
 	<area shape="poly" 
 		coords="728,559,
 				675,654,
 				412,490,
 				466,403"
-		href="buidling-charlie.html" alt="Charlie Del Rosario Building" id="buidling-charlie" class="region">	
+		alt="Charlie Del Rosario Building" id="buidling-charlie" class="region">	
 	<area shape="poly" 
 		coords="1066,390,
 				1056,513,
@@ -179,12 +178,12 @@
 				1137,368,
 				1109,362,
 				1083,370"
-		href="lagoon.html" alt="Lagoon" id="lagoon" class="region">	
+		alt="Lagoon" id="lagoon" class="region">	
 
 	<area shape="poly"
 		coords="2139,511,
 				2192,557"
-		href="pylon.html" alt="PUP Pylon" id="pylon" class="region">		
+		alt="PUP Pylon" id="pylon" class="region">		
 </map>
 
 
