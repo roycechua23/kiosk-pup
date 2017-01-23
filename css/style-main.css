@@ -54,7 +54,7 @@ iframe{
 	background-color: #1784DA;
 	margin-left: 25%;
 	overflow: auto;
-	display: none;
+	display: block;
 	border-radius: 7px;
 
 	  -webkit-transition: opacity 1s ease;
