@@ -18,24 +18,21 @@
 </div>
 <header>
 	<div class="cont">
-		<img src="images/info-icon.png" alt="Information Icon" class="info-icon" onclick="revealModal();">
+		<a href="info.html" target="frame"><img src="images/info-icon.png" alt="Information Icon" class="info-icon"></a>
 	</div>
 	<p><span class="break">|</span>kiosk</p>
 </header>
-<div class="m" id="modal">
-		<div class="m-title">
-			<h2>Region Name Here <span class="close" onclick="closeModal();">&times</span></h2>
-		</div>
-		<div class="m-contain-img">
-			<img src="images/PUPLogo.png" alt="Picture of the location">
-		</div>
-		<div class="m-content">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolore quos nesciunt quod id repellendus, architecto dignissimos asperiores aut. Vitae quisquam, itaque corrupti. Modi inventore quas molestiae quasi dolor, magnam corporis saepe veritatis nemo enim illo alias nobis nisi fuga dolore iste, sit facere dolorum! Non tempore asperiores nobis atque dignissimos. Ea quae sit, unde fugiat eos distinctio, a esse quasi doloribus officia ipsam similique. Error odio, aspernatur excepturi exercitationem, accusantium eum optio soluta facere! Neque ducimus reprehenderit iste, dignissimos eligendi itaque, velit magnam! Temporibus iste libero architecto illo, repudiandae dolorum. Cupiditate commodi sed iste facere quaerat, ut, assumenda fugiat.</p>
-		</div>
+<div class="fr">
+		<p>
+			<span class="close" id="kl">&times</span>
+		</p>
+		<iframe src="" frameborder="0" name="frame">
+		</iframe>
+
 </div>
 
 <div class="posthead">
-<p>&copy Polytechnic University of the Philippines</p>
+<p>&copy Polytechnic University of the Philippines | Neil Pereyra</p>
 </div>
 
 <div class="contain-map">
@@ -51,48 +48,33 @@
 	<img src="images/location-icon.png" alt="Green location balloon icon" class="balloon" id="b-station-ferry">
 	<img src="images/location-icon.png" alt="Green location balloon icon" class="balloon" id="b-tahanan-alumni">
 	<img src="images/location-icon.png" alt="Green location balloon icon" class="balloon" id="b-river">
-	<img src="images/location-icon.png" alt="Green location balloon icon" class="balloon" id="b-office-visitor">
 	<img src="images/location-icon.png" alt="Green location balloon icon" class="balloon" id="b-building-charlie">
 	<img src="images/location-icon.png" alt="Green location balloon icon" class="balloon" id="b-lagoon">
 	<img src="images/location-icon.png" alt="Green location balloon icon" class="balloon" id="b-pylon">
+	<img src="images/location-icon.png" alt="Green location balloon icon" class="balloon" id="b-office-visitor">
 </div>
 
 <map name="pupmap">
-	<area shape="circle" coords="1412,554,48" alt="Obelisk" id="obelisk" class="region">
-	<area shape="circle" coords="1275,1207,134" alt="Interfaith Chapel" id="chapel" class="region">
-	<area shape="poly" 
-		coords="2021,534,
-				2029,465,
-				2093,473,
-				2089,537" 
-		alt="Visitor's Office" id="office-visitor" class="region">
-	<area shape="poly" 
-		coords="1549,1116,
-				1532,1270,
-				1600,1380,
-				1764,1440,
-				1920,1368,
-				2177,1011,
-				2196,857,
-				2141,752,
-				2041,689,
-				1911,689,
-				1628,1005,
-				1807,752" 
-		alt="Track and Football Oval" id="oval" class="region">
-	<area shape="poly" 
+	<area target="frame" shape="circle" coords="1412,554,48" href="obelisk.html" alt="Obelisk" id="obelisk" class="region">
+	<area target="frame" shape="circle" coords="1275,1207,134" href="chapel.html" alt="Interfaith Chapel" id="chapel" class="region">
+	<area target="frame" shape="poly" 
+		coords="2021,534,2029,465,2093,473,2089,537," 
+		href="office-visitor.html" alt="Visitor's Office" id="office-visitor" class="region">
+	<area target="frame" shape="poly" 
+		coords="1549,1116,1532,1270,1600,1380,1764,1440,1920,1368,2177,1011,2196,857,2141,752,2041,689,1911,689,1628,1005,1807,752" href="oval.html" alt="Track and Football Oval" id="oval" class="region">
+	<area target="frame" shape="poly" 
 		coords="1537,666,
 				1446,815,
 				1515,855,
 				1618,714" 
-		alt="Apolinario Mabini Shrine" id="shrine" class="region">
-	<area shape="poly" 
+		href="shrine.html" alt="Apolinario Mabini Shrine" id="shrine" class="region">
+	<area target="frame" shape="poly" 
 		coords="1672,66,
 				1657,253,
 				1954,277,
 				1970,94" 
-		alt="Gymnasium and Sports Center" id="gym" class="region">
-	<area shape="poly" 
+		href="gym.html" alt="Gymnasium and Sports Center" id="gym" class="region">
+	<area target="frame" shape="poly" 
 		coords="778,66,
 				886,28,
 				950,223,
@@ -101,8 +83,8 @@
 				984,318,
 				1053,508,
 				946,547" 
-		alt="Ninoy Aquino Library and Learning Resources Center" id="library" class="region">
-	<area shape="poly" 
+		href="library.html" alt="Ninoy Aquino Library and Learning Resources Center" id="library" class="region">
+	<area target="frame" shape="poly" 
 		coords="669,768,
 				944,926,
 				994,930,
@@ -121,41 +103,41 @@
 				789,1100,
 				864,1059,
 				590,908" 
-		alt="Main Building" id="buidling-main" class="region">
-	<area shape="poly" 
+		href="building-main.html" alt="Main Building" id="buidling-main" class="region">
+	<area target="frame" shape="poly" 
 		coords="641,1372,
 				684,1359
 				708,1424,
 				666,1440,"
-		alt="PUP Ferry Station" id="station-ferry" class="region">
-	<area shape="poly" 
+		href="station-ferry.html" alt="PUP Ferry Station" id="station-ferry" class="region">
+	<area target="frame" shape="poly" 
 		coords="1259,757,
 				1347,903
 				1367,903,
 				1473,664
 				1421,672,
 				1357,661"
-		alt="Freedom Park" id="park" class="region">
-	<area shape="poly" 
+		href="park.html" alt="Freedom Park" id="park" class="region">
+	<area target="frame" shape="poly" 
 		coords="1334,209,
 				1341,100,
 				1307,98,
 				1291,203"
-		alt="Tahanan ng Alumni" id="tahanan-alumni" class="region">
-	<area shape="poly" 
+		href="tahanan-alumni.html" alt="Tahanan ng Alumni" id="tahanan-alumni" class="region">
+	<area target="frame" shape="poly" 
 		coords="103,5,
 				6,5,
 				6,1452,
 				653,1451,
 				239,219"
-		alt="Pasig River" id="river" class="region">
-	<area shape="poly" 
+		href="river.html" alt="Pasig River" id="river" class="region">
+	<area target="frame" shape="poly" 
 		coords="728,559,
 				675,654,
 				412,490,
 				466,403"
-		alt="Charlie Del Rosario Building" id="buidling-charlie" class="region">	
-	<area shape="poly" 
+		href="building-charlie.html" alt="Charlie Del Rosario Building" id="buidling-charlie" class="region">	
+	<area target="frame" shape="poly" 
 		coords="1066,390,
 				1056,513,
 				1027,535,
@@ -178,12 +160,12 @@
 				1137,368,
 				1109,362,
 				1083,370"
-		alt="Lagoon" id="lagoon" class="region">	
+		href="lagoon.html" alt="Lagoon" id="lagoon" class="region">	
 
-	<area shape="poly"
+	<area target="frame" shape="poly"
 		coords="2139,511,
 				2192,557"
-		alt="PUP Pylon" id="pylon" class="region">		
+		href="pylon.html" alt="PUP Pylon" id="pylon" class="region">		
 </map>
 
 

@@ -16,17 +16,20 @@
 
 // JQUERY AREA
 
+// var content1 = "<p> Tis is content1</p>"
+// var title1= "<h2>TITLE ONE</h2>"
 
 // $(document).ready(function(){ 
 // 	$("#modal").css("display", "none");
 // });
 
+
 function revealModal(){
-	$("#modal").css("display","block");
+	$(".fr").css("display","block");
 }
 
 function closeModal(){
-	$("#modal").css("display","none");
+	$(".fr").css("display","none");
 }
 
 $(document).on('click', '.balloon', function () {
@@ -38,5 +41,17 @@ $(document).on('click', '.region', function () {
     // your function here
     revealModal();
 });
+
+
+$(document).on('click', '.info-icon', function () {
+    // your function here
+    revealModal();
+});
+
+$(document).on('click', '#kl', function () {
+    // your function here
+    closeModal();
+});
+
 
 // alert('Load finished');
