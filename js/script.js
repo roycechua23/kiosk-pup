@@ -32,10 +32,10 @@ function closeModal(){
 	$(".fr").css("display","none");
 }
 
-$(document).on('click', '.balloon', function () {
-    // your function here
-    revealModal();
-});
+// $(document).on('click', '.balloon', function () {
+//     // your function here
+//     revealModal();
+// });
 
 $(document).on('click', '.region', function () {
     // your function here

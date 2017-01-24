@@ -108,9 +108,9 @@ iframe{
 }
 .m-title h2{
 	margin: 0;
-	padding-top: 11px;
-	padding-left: 15px;
-	padding-bottom: 15px;
+	padding-top: 18px;
+	padding-left: 18px;
+	padding-bottom: 18px;
 }
 .m-title, .m-content{
 	font-family: 'Arimo',sans-serif;
@@ -129,7 +129,7 @@ iframe{
 .close {
     color: white;
     float: right;
-    font-size: 29px;
+    font-size: 35px;
     font-weight: bold;
     margin-right: 15px;
     display: none;
@@ -142,8 +142,15 @@ iframe{
     cursor: pointer;
 }
 
+.fr p{
+	margin: 0;
+}
+
 #kl{
 	display: block;
+	position: absolute;
+	right: 0;
+	top:10px;
 }
 /* = header
 **********************************************************************/
